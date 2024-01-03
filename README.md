@@ -60,7 +60,7 @@ Suggestions:
 1. Create specific div blocks for white spacing instead of repeating "br". (Or if you wish to use <br> to separate code into 
 sections for readability, comment is a better option)
 2. If there are multiple kinds of products in the experiment, try not to hard code them in advertising.
-3. Seems like currently, the timer on the top of the game seems to be "position: relative", which causes the page content to overlap withthe timer when removing the br you set on the top of the advertising page. Fixing this might require adjustment 
+3. Currently, the timer on the top of the game seems to be "position: relative", which causes the page content to overlap with the timer when removing the br you set on the top of the advertising page. Fixing this might require adjustment 
         for the contents in the emprica package. 
 
 About design:
