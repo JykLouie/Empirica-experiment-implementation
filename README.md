@@ -13,6 +13,7 @@ Reflection:
 
 
 A few bugs and suggestions:
+    
     Bugs:
 
         1. When the countdown ends and the player did't submit, the result page fails to load. This brings the player to a blank page without any button to help the user proceed.
