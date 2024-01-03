@@ -1,5 +1,7 @@
 Feature Design:
-    User Story: On the advertising page (before putting the products into the market), the producer has the option to add a warrant for the product. Warrant requires a certain amount of money, but can attract more people to buy. The Producer can choose how much money to spend on the warrant. After introducing the product into the market and before settling scores, use a page to show all the market warrants to all producers. A producer may choose to challenge a warrant (only one). If the challenge succeeds, it can result in additional turnover from the warrant not being available at settlement. Challenge failure has no impact on the initiator.
+
+    User Story: 
+    On the advertising page (before putting the products into the market), the producer has the option to add a warrant for the product. Warrant requires a certain amount of money, but can attract more people to buy. The Producer can choose how much money to spend on the warrant. After introducing the product into the market and before settling scores, use a page to show all the market warrants to all producers. A producer may choose to challenge a warrant (only one). If the challenge succeeds, it can result in additional turnover from the warrant not being available at settlement. Challenge failure has no impact on the initiator.
 
     Notes:
     1. The warrant functionality can be placed at the bottom of the advertising stage below the price determination section.
@@ -11,7 +13,8 @@ Reflection:
 
 
 A few bugs and suggestions:
-    Bug:
+    Bugs:
+
         1. When the countdown ends and the player did't submit, the result page fails to load. This brings the player to a blank page without any button to help the user proceed.
             a. This might be caused by the fact that "player.set(roundNumberText.concat("_choices"), [some properties])" only happens when the user clicks submit. If the user does not submit before the countdown ends, those properties(which will be used in the warrant and result page) won't be stored and will cause "TypeError: Cannot read properties of undefined" when you trying to read them.
                 i. I fixed this by setting all properties to 0 initially at the advertising stage. A better way to solve this would be to save properties every time on any change made by the player.
